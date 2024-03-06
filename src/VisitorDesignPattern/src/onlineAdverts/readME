@@ -1,0 +1,49 @@
+Your task is to design and write an application for managing online ad listings. Multiple types
+of listings are possible on the site. Currently, the site supports (i) general listings, (ii) listings
+for cars, and (iii) listings for books. These different types of listings have different attributes,
+as can be seen in the class diagram in Figure 2 below. Note that Figure 2’s purpose is to
+illustrate the attributes of different listing types only, and you should adapt it for your own
+solution (e.g., including method details and any abstractions and relationships required for
+good software development practice). Note that a Seller is represented by a name and
+contact details (both Strings). Many of the attributes are treated as Strings for simplicity but
+in reality some of them would be better represented differently, but you can work with Strings
+for your solution.
+Your application does not need to include a Graphical User Interface. It should maintain all
+of the listings that are currently live, support the addition of new listings to the site, as well as
+support their removal. You can use a console-based menu interface for this. An example of
+the menu is given below in Figure 1.
+Your application should also include operations for the following:
+1. Calculating the cost of all listings that are currently live on the site.
+2. Printing out the details (to the console) of all the listings that are currently live on the
+site. The output should be different for different listing types.
+3. Counting the number of live listings for reach category of listing (i.e., general, car,
+book).
+You should apply the Visitor design pattern to implement these operations. For 2, you
+shouldn’t use a toString method in the listing classes for the printing. The visitor class for
+printing should use appropriate accessor methods in the listing classes to access listing
+attributes and print them to the console.
+Welcome to Ads Online. Please select an option from the list below to
+continue or type -1 to exit:
+1. Add a new listing
+2. Remove a listing
+3. Display all listings
+4. Get cost of all live listings
+5. Count listings by category
+3
+Title: Banger for sale
+Description: Ideal for handbrake turns in fields.
+Make: Ford
+Model: Fiesta
+Engine size: 1.2L
+Seller: Jim Murphy (jm@mmail.ie)
+Price: 100.0
+Title: Free yoga classes
+Description: Yoga classes. Ideal for beginners.
+Seller: Lisa Freeman (0101012)
+Price: 0.0
+Title: Second hand book
+Description: A classic!
+Author Harper Lee
+ISBN 978-0446310789
+Seller: Used Books co. (ubooksco@gmail.com)
+Price: 0.5
